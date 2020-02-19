@@ -1,12 +1,81 @@
 \documentclass{article}
+
+\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+
+
 \title{Apuntes de programación lineal}
+
 \author{Jaqueline}
 
+
 \begin{document}
+
 \maketitle
+\tableofcontents
+\section{Introducción}
+\label{sec:introduccion}
+
 
 La forma estandar de un problema de programacón lineal es:
 Dados una matriz $A$ y vectores $b,c$, maximizar $c^t,x$ sujeto a
-$Ax\leq b$ 
+$Ax\leq b$
+para resolver este tipo de problemas te puedes encontar con los
+algunos puntos importantes 
+\section{ Puntos importantes }
+\label{sec:introduccion}
+
+1:Que en lugar de maximizar se te pida minimizar $f(x)ax+bx$\ , en este caso es más
+facil o recomendable multiplicar por un $-1$\ la funcion a minimizar
+realizar el procedimiento como si maximizaras y el resultado final
+o el valor maximo cambarle el signo y el punto donde se alcanza el maximo es el mismo.
+
+
+2:puede ser que la función tenga un termino independientes es decir
+que sea de la siguiente forma  $f(x)ax+bx+c$, en este caso se resuelve
+como si no estuviera el termino $c$ y se resuelve normal per hasta el
+ultimo al valor maximo se le debe de agregar el valor de $c$ y el
+punto donde se alcanza el máximo permanece igual.
+
+
+
+
+3:
+
+
+
+
+\begin{equation}
+  \label{eq:1}
+  A=
+  \begin{pmatrix}
+    0&1&7&6\\
+    0&1&7&6
+
+  \end{pmatrix}
+  \begin{pmatrix}
+     0&1&7&6\\
+    0&1&7&6
+  \end{pmatrix}
+\end{equation}
+
+
+
+\begin{tabular}{|c|c|c|}
+  \hline 
+  &A&B\\
+ \hline 
+  MAQUINA 1  &1&2\\
+  \hline 
+  MAQUINA 1  &1&1\\
+  \hline 
+\end{tabular}
 \end{document}c
+
+
+
+
+
+
